@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <div class="w-3/4 flex mx-auto mt-5 gap-8 ">
+        <div class="w-1/2">
+            <img class="w-full" src="./images.jpeg" alt="">
+        </div>
+        <div>
+            <h1 class="text-4xl w-3/4 font-semibold mb-1 ">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, explicabo? Voluptate accusantium harum commodi, cupiditate aliquam aspernatur quod consequatur temporibus.</p>
+            <h3 class="font-semibold mb-1 mt-2">Memory</h3>
+            <div class="flex gap-2">
+            <button id="extra-memory1" class="border border-gray-300 px-2 py-1 rounded">8GB unfied memory</button>
+            <button id="extra-memory2" class="border border-gray-300 px-2 py-1 rounded">16GB unfied memory</button>
+            </div>
+            <h3 class="font-semibold mb-1 mt-2">stroage</h3>
+            <div class="flex gap-2">
+                <button id="ssd" class="border border-gray-300 px-2 py-1 rounded">256GB SSD storage</button>
+                <button id="first-ssd" class="border border-gray-300 px-2 py-1 rounded">512GB SSD storage</button>
+                <button id="second-ssd" class="border border-gray-300 px-2 py-1 rounded">1TB SSD storage</button>
+            </div>
+            <h3 class="font-semibold mb-1 mt-2">Choose your delivery option</h3>
+            <div class="flex gap-2">
+            <button id="fast-delivery" class="border border-gray-300 px-2 py-1 rounded">Friday, Aug 25 FREE Prime Delivery</button>
+            <button id="late-delivery" class="border border-gray-300 px-2 py-1 rounded">Friday, Aug 21 Delivery change $20</button>
+            </div>
+            <div class="mt-2 w-3/12">
+                <div class="flex gap-2 justify-between border-b-2 border-gray-300 font-semibold">
+                    <p>Best Price</p>
+                    <p>$1299</p>
+                </div>
+                <div class="flex gap-2 justify-between border-b-2 border-gray-300 font-semibold">
+                    <p>Extra Memory Cost</p>
+                    <p>$<span id="memory-text">0</span></p>
+                </div>
+                <div class="flex gap-2 justify-between border-b-2 border-gray-300 font-semibold">
+                    <p>Extra Strorage Cost</p>
+                    <p>$<span id="storage-text" >0</span></p>
+                </div>
+                <div class="flex gap-2 justify-between border-b-2 border-gray-300 font-semibold">
+                    <p>Delivery charge</p>
+                    <p>$<span id="delivery-charge">0</span></p>
+                </div>
+                <div class="flex gap-2 justify-between border-b-2 border-gray-300 font-semibold">
+                    <p>Total Price</p>
+                    <p>$<span>1299</span></p>
+                </div>
+                <p class="font-semibold mt-2">Add Promo code</p>
+                <div class="flex gap-2 mt-1 mb-2">
+                <input class="border px-2 py-1" type="text gap-2">
+                <button class="bg-red-600 px-2 py-1 rounded text-white font-semibold">Apply</button>
+                </div>
+            </div>
+        </div>
+   </div>
+   <hr>
+   <h3  class="text-center font-semibold text-2xl">Total: $<span id="total-price">1299</span></h3>
+   <script src="script.js"></script>
+</body>
+</html>
